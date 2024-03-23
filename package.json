@@ -1,0 +1,23 @@
+{
+  "name": "playwright-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "set dev": "export ENV=dev",
+    "set prod": "export ENV=prod",
+    "set local": "export ENV=local",
+    "test-all": "npx playwright test",
+    "ui": "npx playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.28"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
