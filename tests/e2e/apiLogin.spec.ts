@@ -29,7 +29,6 @@ test.beforeEach(async ({ page }, testInfo) => {
 });
 
 test.afterAll(async ({ }) => {
-  // Dispose all responses.
   await apiContext.dispose();
 });
 
