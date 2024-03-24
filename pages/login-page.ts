@@ -1,7 +1,7 @@
 import { Page, Locator, expect} from '@playwright/test'
 import messages from '../utils/messages'
 
-class LoginPage{
+export default class LoginPage{
     readonly page: Page;
     readonly username: Locator;
     readonly password: Locator;
@@ -43,4 +43,3 @@ class LoginPage{
         await expect(this.messagePanel).toHaveText(messages.login.invalid);
     }
 }
-export default LoginPage;

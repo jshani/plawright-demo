@@ -1,6 +1,6 @@
 import { type Locator, type Page, expect } from '@playwright/test';
 
-export class HomePage {
+export default class HomePage {
     readonly page: Page;
     readonly startedButton: Locator;
     readonly languageDropdown: Locator;
@@ -34,4 +34,3 @@ export class HomePage {
     await expect(this.javaFile).toHaveText(this.javaFileName)
   }
 }
-export default HomePage;
