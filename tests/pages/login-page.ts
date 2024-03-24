@@ -1,5 +1,5 @@
 import { Page, Locator, expect} from '@playwright/test'
-import messages from '../utils/messages'
+import messages from '../../utils/messages'
 
 export default class LoginPage{
     readonly page: Page;
